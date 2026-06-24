@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chính sách bảo mật — Gia phả Họ Nguyễn Phúc</title>
+<meta name="description" content="Chính sách bảo mật của ứng dụng Gia phả Họ Nguyễn Phúc — cách thu thập, sử dụng và bảo vệ thông tin cá nhân.">
+<style>
+  :root{
+    --cream:#F3E7C8; --cream-2:#ECDEBC; --paper:#FBF5E6;
+    --red:#8A1C1C; --green:#2C5A48; --brown:#3A2E20; --gold:#C9A24A; --muted:#8A7A5C;
+    --hair:#E1D2A8;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--cream); color:var(--brown);
+    font-family:Cambria,Georgia,"Times New Roman",serif; line-height:1.7;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:760px; margin:0 auto; padding:48px 22px 80px}
+  .paper{background:var(--paper); border:1px solid var(--hair);
+    border-radius:14px; padding:40px 32px; box-shadow:0 8px 30px rgba(80,50,20,.07)}
+  .eyebrow{display:flex; align-items:center; gap:14px; color:var(--gold);
+    font-size:13px; letter-spacing:.22em; text-transform:uppercase; margin-bottom:22px}
+  .eyebrow:before,.eyebrow:after{content:""; height:1px; background:var(--hair); flex:1}
+  h1{font-size:2.1rem; margin:0 0 4px; color:var(--brown)}
+  .sub{color:var(--muted); font-size:.95rem; margin:0}
+  .sub.red{color:var(--red); font-style:italic; margin-top:6px}
+  h2{font-size:1.25rem; margin:34px 0 8px; color:var(--brown)}
+  a{color:var(--red)}
+  ul{padding-left:20px} li{margin:6px 0}
+  code{background:var(--cream-2); padding:1px 6px; border-radius:5px; font-size:.92em}
+  .rule{height:1px; background:var(--hair); margin:30px 0}
+  footer{margin-top:34px; padding-top:18px; border-top:1px solid var(--hair);
+    color:var(--muted); font-size:.88rem}
+  .badge{display:inline-block; border:1px solid var(--gold); color:var(--red);
+    border-radius:999px; padding:2px 12px; font-size:.8rem; letter-spacing:.05em}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <article class="paper">
+    <div class="eyebrow">Chính sách bảo mật</div>
+    <h1>Chính sách bảo mật</h1>
+    <p class="sub">Ứng dụng “Gia phả” — Họ Nguyễn Phúc</p>
+    <p class="sub red">thôn Yên Bình · xã Yên Lộc · Kim Sơn · Ninh Bình</p>
+    <p class="sub" style="margin-top:10px">Cập nhật lần cuối: 24/06/2026</p>
+
+    <div class="rule"></div>
+
+    <p>Ứng dụng <strong>Gia phả</strong> (gói <code>net.minhtam.giapha.mobile</code>)
+    là phần mềm quản lý gia phả điện tử của Họ Nguyễn Phúc. Chúng tôi tôn trọng quyền
+    riêng tư và cam kết bảo vệ thông tin cá nhân của người dùng theo chính sách dưới đây.</p>
+
+    <h2>1. Thông tin chúng tôi thu thập</h2>
+    <ul>
+      <li><strong>Thông tin tài khoản:</strong> địa chỉ email và mật khẩu (được mã hóa)
+      dùng để đăng nhập, qua dịch vụ Firebase Authentication của Google.</li>
+      <li><strong>Dữ liệu gia phả:</strong> họ tên, năm sinh – năm mất, giới tính, quan hệ
+      huyết thống, quê quán, tiểu sử và thông tin phả hệ do thành viên dòng họ nhập vào.</li>
+      <li><strong>Hình ảnh:</strong> ảnh chân dung/tư liệu người dùng tự tải lên (nếu có),
+      lưu trên Firebase Storage.</li>
+      <li><strong>Dữ liệu kỹ thuật tối thiểu:</strong> thông tin cần thiết để duy trì phiên
+      đăng nhập. Ứng dụng <strong>không</strong> theo dõi vì mục đích quảng cáo.</li>
+    </ul>
+
+    <h2>2. Mục đích sử dụng</h2>
+    <ul>
+      <li>Xác thực và quản lý tài khoản đăng nhập.</li>
+      <li>Hiển thị cây gia phả, lịch giỗ chạp, sự kiện, đóng góp và các tính năng của dòng họ.</li>
+      <li>Kết nối, tra cứu thông tin giữa các thành viên trong dòng họ.</li>
+    </ul>
+    <p>Chúng tôi <strong>không bán, không cho thuê, không trao đổi</strong> dữ liệu cá nhân
+    của bạn cho bên thứ ba vì mục đích thương mại.</p>
+
+    <h2>3. Lưu trữ và bảo mật</h2>
+    <ul>
+      <li>Dữ liệu lưu trên hạ tầng <strong>Google Firebase</strong> (Firestore,
+      Authentication, Storage) với biện pháp bảo mật tiêu chuẩn của Google.</li>
+      <li>Truy cập được kiểm soát theo phân quyền (quản trị / biên tập / thành viên / khách)
+      qua Firestore Security Rules.</li>
+      <li>Mật khẩu không bao giờ được lưu ở dạng văn bản thuần.</li>
+    </ul>
+
+    <h2>4. Chia sẻ với bên thứ ba</h2>
+    <p>Ứng dụng sử dụng dịch vụ của <strong>Google Firebase</strong>. Việc xử lý dữ liệu của
+    Google tuân theo <a href="https://policies.google.com/privacy" target="_blank"
+    rel="noopener">Chính sách bảo mật của Google</a>. Ngoài Google Firebase, chúng tôi không
+    chia sẻ dữ liệu với bên thứ ba nào khác, trừ khi pháp luật yêu cầu.</p>
+
+    <h2>5. Quyền của người dùng</h2>
+    <p>Bạn có quyền yêu cầu xem, chỉnh sửa hoặc xóa thông tin cá nhân của mình, và yêu cầu
+    xóa tài khoản cùng dữ liệu liên quan. Mọi yêu cầu xin gửi về email bên dưới; chúng tôi
+    xử lý trong vòng 30 ngày.</p>
+
+    <h2>6. Trẻ em</h2>
+    <p>Ứng dụng dành cho thành viên dòng họ. Thông tin của trẻ em (nếu có trong gia phả) do
+    người lớn/người giám hộ trong dòng họ nhập và chịu trách nhiệm.</p>
+
+    <h2>7. Thay đổi chính sách</h2>
+    <p>Chính sách này có thể được cập nhật. Phiên bản mới sẽ được đăng tại chính trang này
+    kèm ngày cập nhật.</p>
+
+    <h2>8. Liên hệ</h2>
+    <p>Mọi thắc mắc về quyền riêng tư, vui lòng liên hệ:
+    <a href="mailto:tuyennk@fms.com.vn">tuyennk@fms.com.vn</a></p>
+
+    <footer>
+      <span class="badge">Gia phả Họ Nguyễn Phúc</span><br><br>
+      © 2026 Họ Nguyễn Phúc · thôn Yên Bình, xã Yên Lộc, Kim Sơn, Ninh Bình.
+    </footer>
+  </article>
+</div>
+</body>
+</html>
